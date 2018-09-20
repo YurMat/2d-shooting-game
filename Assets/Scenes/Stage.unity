@@ -113,6 +113,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &169605492
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.411497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.7369237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035485013693092, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329096129315990, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+      propertyPath: m_Name
+      value: EnemyBullet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &211356545
 Prefab:
   m_ObjectHideFlags: 0
@@ -315,6 +361,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1945212677363408, guid: 67d90bc452b85fe47947ce6862fda1b2, type: 2}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d90bc452b85fe47947ce6862fda1b2, type: 2}
   m_IsPrefabAsset: 0
@@ -336,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   shotDelay: 0
-  bullet: {fileID: 1058644142468084, guid: 02663b29620802e4ab0ec835b5c15616, type: 2}
+  bullet: {fileID: 1329096129315990, guid: c08e2c9c97ef5c74da90d733f21ed9d3, type: 2}
 --- !u!50 &1196094657
 Rigidbody2D:
   serializedVersion: 4
