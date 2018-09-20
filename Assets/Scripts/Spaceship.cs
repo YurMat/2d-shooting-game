@@ -16,7 +16,7 @@ public class Spaceship : MonoBehaviour {
     public GameObject bullet;
 
     //弾の作成
-    public void shot(Transform origin)
+    public void Shot(Transform origin)
     {
         Instantiate(bullet, origin.position, origin.rotation);
     }
@@ -24,6 +24,6 @@ public class Spaceship : MonoBehaviour {
     //機体の移動
     public void Move(Vector2 direction)
     {
-        GetComponent<Rigidbody2D>().velocity = direction * speed
+        GetComponent<Rigidbody2D>().velocity = direction * speed;
     }
 }
