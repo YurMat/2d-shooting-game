@@ -15,6 +15,9 @@ public class Spaceship : MonoBehaviour {
     //弾のPrefab
     public GameObject bullet;
 
+    //弾を撃つかどうか
+    public bool canShot;
+
     //弾の作成
     public void Shot(Transform origin)
     {
