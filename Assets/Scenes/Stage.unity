@@ -159,6 +159,36 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f754e75af98aeb44db3b0b0c7fe5c300, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &211356546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1416220547608034, guid: f754e75af98aeb44db3b0b0c7fe5c300,
+    type: 2}
+  m_PrefabInternal: {fileID: 211356545}
+--- !u!61 &211356547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211356546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.06}
+  m_EdgeRadius: 0
 --- !u!1 &266257283
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,3 +312,39 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d90bc452b85fe47947ce6862fda1b2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1196094655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1945212677363408, guid: 67d90bc452b85fe47947ce6862fda1b2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1196094654}
+--- !u!60 &1196094656
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196094655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.2730646, y: 0.1001035}
+      - {x: -0.19943726, y: 0.15442443}
+      - {x: -0.24797761, y: -0.028490067}
+      - {x: -0.1595977, y: -0.2528783}
+      - {x: 0.12659836, y: -0.26777494}
+      - {x: 0.27493238, y: 0.09247899}
+      - {x: 0.27112257, y: 0.09176171}
