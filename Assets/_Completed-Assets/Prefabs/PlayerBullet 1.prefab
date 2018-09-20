@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4723242700883838}
   - component: {fileID: 50165990795044608}
+  - component: {fileID: 114711653757903632}
   m_Layer: 0
   m_Name: PlayerBullet 1
   m_TagString: Untagged
@@ -120,6 +121,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114711653757903632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058644142468084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de946e4c807504e429eba3d76d0ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!212 &212011131303261096
 SpriteRenderer:
   m_ObjectHideFlags: 1
