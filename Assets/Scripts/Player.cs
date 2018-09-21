@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     }
 
     //ぶつかった瞬間に呼び出される
-    private void OnTriggerEnter2D(Collider2D c)
+    void OnTriggerEnter2D(Collider2D c)
     {
         //レイヤー名を取得
         string layerName = LayerMask.LayerToName(c.gameObject.layer);

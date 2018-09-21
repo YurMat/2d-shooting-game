@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour {
             yield return new WaitForSeconds(spaceship.shotDelay);
         }
     }
-    private void OnTriggerEnter2D(Collider2D c)
+    void OnTriggerEnter2D(Collider2D c)
     {
         //レイヤー名を取得
         string layerName = LayerMask.LayerToName(c.gameObject.layer);
