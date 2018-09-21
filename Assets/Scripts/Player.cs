@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
         {
             spaceship.Shot(transform);
 
+            //shotDelay秒待つ
             yield return new WaitForSeconds(spaceship.shotDelay);
         }
     }
@@ -32,5 +33,18 @@ public class Player : MonoBehaviour
 
         // 移動
         spaceship.Move(direction);
+    }
+
+    //ぶつかった瞬間に呼び出される
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //弾の削除
+        Destroy(collision.gameObject);
+
+        //爆発する
+        spaceship.Explosion();
+
+        //プレイヤーを削除
+        Destroy(gameObject);
     }
 }
