@@ -36,15 +36,25 @@ public class Player : MonoBehaviour
     }
 
     //ぶつかった瞬間に呼び出される
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        //弾の削除
-        Destroy(collision.gameObject);
+        //レイヤー名を取得
+        string layerName = LayerMask.LayerToName(collider.gameObject.layer);
 
-        //爆発する
-        spaceship.Explosion();
+        //レイヤー名がBullet(Enemy)のときは弾を削除
+        if(layerName == "Bullet(Enemy)")
+        {
+            Destroy(collider.gameObject);
+        }
+        
+        //レイヤー名がBullet(Enemy)またはEnemyの場合は爆発
+        if(layerName == "Bullet(Enemy)"|| layerName == "Enemy")
+        {
+            //爆発する
+            spaceship.Explosion();
 
-        //プレイヤーを削除
-        Destroy(gameObject);
+            //プレイヤーを削除
+            Destroy(gameObject);
+        }
     }
 }
