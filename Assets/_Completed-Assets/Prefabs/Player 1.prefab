@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 95713860892723776}
   - component: {fileID: 50736018675867084}
   - component: {fileID: 114977913232897722}
-  - component: {fileID: 114628568943191538}
   - component: {fileID: 114852046495602150}
-  m_Layer: 0
+  - component: {fileID: 61624840702785818}
+  m_Layer: 8
   m_Name: Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,6 +65,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61624840702785818
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1416220547608034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.06}
+  m_EdgeRadius: 0
 --- !u!95 &95713860892723776
 Animator:
   serializedVersion: 3
@@ -83,18 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114628568943191538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1416220547608034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de946e4c807504e429eba3d76d0ad399, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!114 &114852046495602150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,9 +120,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  shotDelay: 0.5
+  shotDelay: 0.05
   bullet: {fileID: 1058644142468084, guid: 02663b29620802e4ab0ec835b5c15616, type: 2}
   canShot: 0
+  explosion: {fileID: 1951726724906634, guid: d127513048dc1fc41b04ef78f88452df, type: 2}
 --- !u!114 &114977913232897722
 MonoBehaviour:
   m_ObjectHideFlags: 1

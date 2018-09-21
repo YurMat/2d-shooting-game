@@ -5,8 +5,8 @@ using UnityEngine;
 public class DestroyArea : MonoBehaviour {
 
     // Use this for initialization
-    void OnTriggerExit2D(Collider2D collider)
+    void OnTriggerExit2D(Collider2D c)
     {
-        Destroy(collider.gameObject);
+        Destroy(c.gameObject);
     }
 }

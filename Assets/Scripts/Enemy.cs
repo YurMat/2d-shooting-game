@@ -35,4 +35,21 @@ public class Enemy : MonoBehaviour {
             yield return new WaitForSeconds(spaceship.shotDelay);
         }
     }
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        //レイヤー名を取得
+        string layerName = LayerMask.LayerToName(c.gameObject.layer);
+
+        //レイヤー名がBullet(Player)以外のときは何も行わない
+        if (layerName != "Bullet(Player)") return;
+
+        //弾の削除
+        Destroy(c.gameObject);
+
+        //爆発
+        spaceship.Explosion();
+
+        //エネミーの削除
+        Destroy(gameObject);
+    }
 }
