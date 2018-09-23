@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour {
         spaceship = GetComponent<Spaceship>();
 
         //ローカル座標のY軸のマイナス方向に移動
-        spaceship.Move(transform.up * -1);
+        Move(transform.up * -1);
 
         // canShotがfalseの場合、ここでコルーチンを終了させる
         if (spaceship.canShot == false)
@@ -35,6 +35,13 @@ public class Enemy : MonoBehaviour {
             yield return new WaitForSeconds(spaceship.shotDelay);
         }
     }
+
+    //機体の移動
+    public void Move(Vector2 direction)
+    {
+        GetComponent<Rigidbody2D>().velocity = direction * spaceship.speed;
+    }
+
     void OnTriggerEnter2D(Collider2D c)
     {
         //レイヤー名を取得
